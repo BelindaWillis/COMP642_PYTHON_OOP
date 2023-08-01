@@ -5,3 +5,4 @@
  defined displayList to display the list of students
  printed a list of students over the age of 30
 Make the age a parameter and pass in the age - instead of hard coding the age into the code - makes the selection criteria more general 
+Now we can count the number of old students - making it more general by passing anAge as a parameter

@@ -52,3 +52,13 @@ def dispOldstudents(anAge):
         if student.Age > anAge:
             print(student.firstname)
 dispOldstudents(40)
+
+# Define the number of old students using count method
+def countOldstudents(anAge):
+    count = 0
+    for student in myStudents:
+        if student.Age > anAge:
+            count += 1
+    return count
+
+print("The number of old students is: ", countOldstudents(30))
