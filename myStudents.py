@@ -32,9 +32,17 @@ print(len(myStudents))
 
 # # Define the method to print the list of students
 def displayStudents(myStudents):
-    for person in myStudents:
-        print(person)
+    for student in myStudents:
+        print(student)
 
 
 # # Call the method to print the list of students
 displayStudents(myStudents)
+
+# Define the old students
+def dispOldstudents():
+    for student in myStudents:
+        if student.Age > 30:
+            print(student.firstname)
+
+dispOldstudents()
