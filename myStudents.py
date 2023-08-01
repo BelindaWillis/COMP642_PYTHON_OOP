@@ -39,10 +39,16 @@ def displayStudents(myStudents):
 # # Call the method to print the list of students
 displayStudents(myStudents)
 
-# Define the old students
+# Define the old students with hard coded age
 def dispOldstudents():
     for student in myStudents:
         if student.Age > 30:
             print(student.firstname)
-
 dispOldstudents()
+
+# Define the old students with age as a parameter
+def dispOldstudents(anAge):
+    for student in myStudents:
+        if student.Age > anAge:
+            print(student.firstname)
+dispOldstudents(40)

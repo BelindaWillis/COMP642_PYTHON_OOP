@@ -4,3 +4,4 @@
  Week Two - Lists, creation adding removing and appending obejcts - list methods suchs as len, pop, insert and append, created myStudent list - not sure yet how to print list 
  defined displayList to display the list of students
  printed a list of students over the age of 30
+Make the age a parameter and pass in the age - instead of hard coding the age into the code - makes the selection criteria more general 
