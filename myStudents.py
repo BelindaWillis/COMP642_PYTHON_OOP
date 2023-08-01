@@ -1,13 +1,16 @@
-# Define the class of Person (the cookie cutter)
+# Define the class of Student (the cookie cutter)
 class Student:
-    def __init__(self, firstName, lastName, course):
+    def __init__(self, firstName, lastName, age):
         self.firstname = firstName
         self.lastname = lastName
-        self.Course = course
-# Define the object of a person (the cookie)
-Person0 = Student("Belinda", "Willis", "COMP642")
-Person1 = Student("Cassie", "Lieu", "COMP639")
-Person2 = Student("Sarah", "Lind", "ACC201")
+        self.Age = age
+    def __str__(self):
+        return self.firstname + " " + self.lastname + " is " + str(self.Age)
+    
+# Define the object of a Student (the cookie)
+Person0 = Student("Belinda", "Willis", 54)
+Person1 = Student("Cassie", "Lieu", 35)
+Person2 = Student("Sarah", "Lind", 23)
 # Create a list of my students
 myStudents = []
 myStudents.append(Person0)
@@ -22,12 +25,16 @@ print(len(myStudents))
 # Define a method to remove a person from myStudents list.
 myStudents.pop(1)
 
+myStudents.append(Person2)
+
 # Print the length of the myStudents list
 print(len(myStudents))
 
 # # Define the method to print the list of students
-# def print_students(myStudents):
+def displayStudents(myStudents):
+    for person in myStudents:
+        print(person)
 
 
-# # Print the list of students
-# print("My students are:" + myStudents)
+# # Call the method to print the list of students
+displayStudents(myStudents)
