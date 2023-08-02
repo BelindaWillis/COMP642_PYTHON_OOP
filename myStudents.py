@@ -6,7 +6,9 @@ class Student:
         self.Age = age
     def __str__(self):
         return self.firstname + " " + self.lastname + " is " + str(self.Age)
-    
+    def speak(self):
+        print("Hello, my name is ", self.firstname, " ", self.lastname, " and I am ", self.Age, " years old.")
+
 # Define the object of a Student (the cookie)
 Person0 = Student("Belinda", "Willis", 54)
 Person1 = Student("Cassie", "Lieu", 35)
@@ -24,7 +26,7 @@ print(len(myStudents))
 
 # Define a method to remove a person from myStudents list.
 myStudents.pop(1)
-
+# Define a method to add a new person to myStudents list.
 myStudents.append(Person2)
 
 # Print the length of the myStudents list
@@ -61,4 +63,4 @@ def countOldstudents(anAge):
             count += 1
     return count
 
-print("The number of old students is: ", countOldstudents(30))
+print("The number of old students is: ", countOldstudents(20))
